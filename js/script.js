@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const phaseThreeStyles = document.createElement('link'); phaseThreeStyles.rel = 'stylesheet'; phaseThreeStyles.href = 'css/phase3.css'; document.head.appendChild(phaseThreeStyles);
+  const favicon = document.querySelector('link[rel="icon"]') || document.createElement('link'); favicon.rel = 'icon'; favicon.type = 'image/png'; favicon.href = 'assets/favicon-logo.png'; if (!favicon.parentNode) document.head.appendChild(favicon);
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.primary-nav');
   if (menuButton && nav) {
